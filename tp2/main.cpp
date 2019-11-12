@@ -446,12 +446,14 @@ bool verifierNavireCoule(int uneGrille[][10], int uneLigne, int uneColonne)
 
 int main()
 {
-	//srand(time(0));
+	//srand(time(0)); //Une erreur sur cette ligne
 	int laGrilleJoueur[10][10];
 	int laGrilleOrdinateur[10][10];
 	bool laCreationNavire;
 	int laLigne = 4;
 	int laColonne = 4;
+	bool leNavireTouche; 
+	bool leNavireCoule; 
 
 
 	initialiserGrille(laGrilleJoueur); //initialisation de la grille du joueur
@@ -464,8 +466,16 @@ int main()
 	placerNavireAleatoirement(laGrilleOrdinateur, 5); //on place aléatoirement un navire sur la grille de l'ordinateur          
 	afficherGrille(laGrilleJoueur, laGrilleOrdinateur); //On affiche les deux grilles
 	saisirCoupJoueur(laLigne, laColonne); //Le joueur joue 
-	jouerCoup(laGrilleJoueur, laLigne, laColonne);
+
+	leNavireTouche = jouerCoup(laGrilleOrdinateur, laLigne, laColonne);
+
+	if (leNavireTouche == true)
+	{
+	
+	}
+
+	
 
 	return 0;
-}cd 
+}
 
