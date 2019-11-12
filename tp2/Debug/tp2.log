@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\dut_2019_2020\S1\ap1.2\tp2_references\tp2\main.cpp(452,7): warning C4101:  'laCreationNavire' : variable locale non référencée
+  tp2.vcxproj -> D:\dut_2019_2020\S1\ap1.2\tp2_references\tp2\Debug\tp2.exe
